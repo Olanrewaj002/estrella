@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gradient-to-r from-black to-teal-700">
+    <header>
+        <nav class="flex items-center justify-between px-5 lg:px-20 h-16 lg:gap-20">
+            <a href="index.html"><img class="h-32 w-32 lg:w-60 whitespace-nowrap" src="images/EstrellaInteractive.svg"></a>
+    
+            <div class="dropdown transition delay-150 text-white bg-gradient-to-r from-white to-teal-700 absolute -top-full z-10 max-lg:bg-slate-white left-0 w-full flex flex-col gap-6 items-center py-16 text-lg font-bold
+            lg:static lg:flex-row justify-between"> 
+                <ul class="flex flex-col items-center gap-6 text-black lg:flex-row lg:gap-12 text-sm">
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="index.html">Home</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="about.html">About Us</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="Blog.html">Blog</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="services.html">Our Services</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="contact.html">Contact Us</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="pricing.html">Pricing</a>
+                </ul>
+                <div>
+                    <a href="contact2.html"><button class="py-3 px-6 bg-gradient-to-r from-black to-teal-700 rounded-md text-sm font-light text-slate-400 hover:text-slate-300">Get Started</button></a>
+                </div>
+            </div>
+            
+            <div class="togglebutton lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-9">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>    
+            </div>
+        </nav>
+    </header>
+
+    <div clas="relative grid grid-flow-row gap-2">
+    <div class="relative flex justify-center">
+        <h1 class="relative font-black text-2xl">Our Blog</h1>
+    </div>
+
+
+    <div class="relative overflow-hidden max-w-4xl mx-1 top-16">
+        <div class="flex transition-transform duration-500 ease-in-out" id="carousel-wrapper">
+            <!-- Blog 1 -->
+            <div class="min-w-full pb-6 bg-gradient-to-r from-teal-700 to-black rounded-lg">
+                <div class="relative grid gap-6">
+                    <img src="images/pexels-joshsorenson-1714208.jpg" class="w-full h-52 rounded-t-lg">
+                    <div class="grid gap-1">
+                        <h2 class="px-5 text-lg font-bold text-orange-500">The Evolution of Tech</h2>
+                        <h3 class=" px-5 text-sm font-light text-slate-200">
+                            How tech has moved from solving our problems to<br> becoming a lifestyle.
+                        </h3>
+                    </div>
+                    <div class="flex items-center gap-2 px-5">
+                        <img src="images/WhatsApp Image 2024-11-03 at 03.53.41.jpeg" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center gap-1">
+                            <h5 class="text-xs font-semibold text-slate-300">Olanrewaju Paul</h5>
+                            <div class="w-1 h-3 bg-slate-300"></div>
+                            <h5 class="text-xs font-semibold text-slate-300">4 Dec 2024</h5>
+                        </div>
+                    </div>
+                    <a href="techpost.html" class="inline-flex w-fit mx-5 items-center px-5 py-2 gap-4 text-xs font-light text-white border border-white rounded-md">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Blog 2 -->
+            <div class="min-w-full pb-6 bg-gradient-to-r from-teal-700 to-black rounded-lg">
+                <div class="relative grid gap-6">
+                    <img src="images/pexels-cottonbro-5082579.jpg" class="w-full h-52 rounded-t-lg">
+                    <div class="grid gap-1">
+                        <h2 class="px-5 text-lg font-bold text-orange-500">Why You Need a Website Today</h2>
+                        <h3 class="px-5 text-sm font-light text-slate-200">
+                            Owning a website has become more important than ever in this digital age. We provide you with fact to back it up.
+                        </h3>
+                    </div>
+                    <div class="flex items-center gap-2 px-5">
+                        <img src="images/WhatsApp Image 2024-11-03 at 03.53.41.jpeg" class="w-7 h-7 rounded-full">
+                        <div class="flex items-center gap-1">
+                            <h5 class="text-xs font-semibold text-slate-300">Olanrewaju Paul</h5>
+                            <div class="w-1 h-3 bg-slate-300"></div>
+                            <h5 class="text-xs font-semibold text-slate-300">4 Dec 2024</h5>
+                        </div>
+                    </div>
+                    <a href="techpost.html" class="inline-flex w-fit mx-5 items-center px-5 py-2 gap-4 text-xs font-light text-white border border-white rounded-md">
+                        Read More
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Buttons -->
+        <button class="absolute bottom-56  left-3 transform -translate-y-1/2 bg-white bg-opacity-70 text-white p-2 rounded-full hover:bg-opacity-70" id="prev-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+              </svg>
+              
+        </button>
+        <button class="absolute bottom-56 right-3 transform -translate-y-1/2 bg-white bg-opacity-70 text-white p-2 rounded-full hover:bg-opacity-70" id="next-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+              
+        </button>
+    </div>
+    
+    
+
+
+    <script>
+
+        // Select the toggle button and the dropdown menu
+        const toggleButton = document.querySelector('.togglebutton');
+        const dropdownMenu = document.querySelector('.dropdown');
+
+        // Add an event listener to the toggle button
+        toggleButton.addEventListener('click', () => {
+            // Toggle the visibility class for the dropdown menu
+            dropdownMenu.classList.toggle('top-16');
+        });
+
+
+            document.addEventListener("DOMContentLoaded", () => {
+        const carouselWrapper = document.getElementById("carousel-wrapper");
+        const carouselItems = document.querySelectorAll(".min-w-full");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
+
+        let currentIndex = 0;
+
+        const updateCarousel = () => {
+            carouselWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+        };
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex === 0) ? carouselItems.length - 1 : currentIndex - 1;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+            updateCarousel();
+        });
+
+        // // Auto-slide every 5 seconds
+        // setInterval(() => {
+        //     currentIndex = (currentIndex === carouselItems.length - 1) ? 0 : currentIndex + 1;
+        //     updateCarousel();
+        // }, 5000);
+    });
+    </script>
+</body>
+</html>

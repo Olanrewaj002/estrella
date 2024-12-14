@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <header>
+        <nav class="flex items-center justify-between px-5 lg:px-20 h-16 lg:gap-20">
+            <a href="index.html"><img class="h-32 w-32 lg:w-60 whitespace-nowrap" src="images/EstrellaInteractive.svg"></a>
+    
+            <div class="dropdown transition delay-150 text-white bg-gradient-to-r from-white to-teal-700 absolute -top-full z-10 max-lg:bg-slate-white left-0 w-full flex flex-col gap-6 items-center py-16 text-lg font-bold
+            lg:static lg:flex-row justify-between"> 
+                <ul class="flex flex-col items-center gap-6 text-black lg:flex-row lg:gap-12 text-sm">
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="index.html">Home</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="about.html">About Us</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="Blog.html">Blog</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="services.html">Our Services</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="contact.html">Contact Us</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="pricing.html">Pricing</a>
+                </ul>
+                <div>
+                    <a href="contact2.html"><button class="py-3 px-6 bg-gradient-to-r from-black to-teal-700 rounded-md text-sm font-light text-slate-400 hover:text-slate-300">Get Started</button></a>
+                </div>
+            </div>
+            
+            <div class="togglebutton lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-9">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>    
+            </div>
+        </nav>
+    </header>
+
+    
+
+        <a href="blog.html" class="flex items-center gap-1 mx-5 top-2 relative"> 
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg> -->
+
+                <h5 class="font-semibold text-sm">Back</h5>
+        </a>
+
+    <!-- <div class="relative mx-5 top-12">      
+        <h1 class="relative font-black text-2xl">Our Blog</h1>   
+    </div> -->
+
+    <div class="grid grid-flow-row gap-2 top-8 relative">
+    <div class="relative grid grid-flow-row gap-8  m-1 bg-gradient-to-r to-black from-teal-700 pb-6 rounded-t-md">
+
+        <div class="relative grid grid-flow-row gap-6">
+            <div class="relative">
+                <img src="images/pexels-joshsorenson-1714208.jpg" class="w-full h-52 rounded-t-lg">
+            </div>
+
+            <div class="relative grid grid-flow-row gap-1">
+                <div class="px-5">
+                    <h2 class="font-bold text-lg text-orange-500">The Evolution of Tech</h2>
+                </div>
+
+                <div class="relative">
+                    <h3 class="font-light text-sm px-5 text-slate-200">
+                        How tech has moved from solving our problems to becoming a lifestyle.
+                    </h3>
+                </div>
+            </div>
+
+            <div class="mx-5 flex items-center gap-2">
+                <img src="images/WhatsApp Image 2024-11-03 at 03.53.41.jpeg" class="w-7 h-7 rounded-full">
+
+                <div class="relative flex items-center gap-1">
+                    <h5 class="relative flex items-center text-slate-300 font-semibold text-xs">Olanrewaju Paul </h5>
+                    <img src="images/Dot.svg" class="w-1 h-3">
+                    <h5 class="text-slate-300 font-semibold text-xs">4 Dec 2024</h5>
+                </div>  
+            </div>
+
+        </div>
+
+    </div>
+
+        <div class="mx-5 relative">
+            <h6 class="text-lg leading-7 font-serif">
+                Technology was once a tool crafted to solve problems—streamlining tasks,
+                 improving communication, and automating manual labor. It focused on
+                  providing functional solutions to human challenges, like faster
+                   transportation, efficient data processing, and enhanced healthcare.
+                    But in the past decade, tech has transcended its role as a problem-solver
+                     to become an intrinsic part of our daily lives and identities. The shift
+                      began with the rise of social media, wearable devices, and smart home
+                       technologies. Gadgets like smartphones and smartwatches are no longer
+                        just utilities; they are fashion statements and symbols of status.
+                         Social platforms have redefined how we connect, turning interaction
+                          into a curated experience and an essential part of modern culture.
+                           Now, tech isn't just about functionality; it's about lifestyle.
+                            People choose devices not only for their capabilities but for how
+                             they align with personal aesthetics or philosophies. Virtual reality
+                              and AI-assisted platforms offer entertainment and companionship, merging
+                               into aspects of leisure, creativity, and even self-expression.
+                                This integration has blurred the lines between necessity and luxury.
+                                 As tech continues to evolve, it isn't just solving problems anymore;
+                                  it's shaping who we are, influencing how we live, and redefining our
+                                   values in an increasingly digital world.
+            </h6>
+        </div>
+
+    </div>
+
+
+
+        <script>
+
+            // Select the toggle button and the dropdown menu
+            const toggleButton = document.querySelector('.togglebutton');
+            const dropdownMenu = document.querySelector('.dropdown');
+    
+            // Add an event listener to the toggle button
+            toggleButton.addEventListener('click', () => {
+                // Toggle the visibility class for the dropdown menu
+                dropdownMenu.classList.toggle('top-16');
+            });
+        </script>
+
+</body>
+</html>

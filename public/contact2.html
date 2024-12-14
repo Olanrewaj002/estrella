@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gradient-to-r from-black to-teal-700">
+    <header>
+        <nav class="flex items-center justify-between px-5 lg:px-20 h-16 lg:gap-20">
+            <a href="index.html"><img class="h-32 w-32 lg:w-60 whitespace-nowrap" src="images/EstrellaInteractive.svg"></a>
+    
+            <div class="dropdown transition delay-150 text-white bg-gradient-to-r from-white to-teal-700 absolute -top-full z-10 max-lg:bg-slate-white left-0 w-full flex flex-col gap-6 items-center py-16 text-lg font-bold
+            lg:static lg:flex-row justify-between"> 
+                <ul class="flex flex-col items-center gap-6 text-black lg:flex-row lg:gap-12 text-sm">
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="index.html">Home</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="about.html">About Us</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="Blog.html">Blog</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="services.html">Our Services</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="contact1.html">Contact Us</a>
+                    <a class="hover:text-slate-500 font-mono text-sm lg:text-xs" href="pricing.html">Pricing</a>
+                </ul>
+                <div>
+                    <a href="contact2.html"><button class="py-3 px-6 bg-gradient-to-r from-black to-teal-700 rounded-md text-sm font-light text-slate-400 hover:text-slate-300">Get Started</button></a>
+                </div>
+            </div>
+            
+            <div class="togglebutton lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-9">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>    
+            </div>
+        </nav>
+    </header>
+
+    <div class="relative grid grid-flow-row gap-6 px-5 top-12">
+        <div class="relative">
+            <h1 class="font-black text-xl pr-8">
+                Please fil out the form to help us understand your needs.
+            </h1>
+        </div>
+        
+        <form class="grid grid-flow-row gap-6">
+            
+            <div>
+                <form class="max-w-sm mx-auto">
+                    <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Email</label>
+                    <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                        <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                        <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                        </svg>
+                    </div>
+                    <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm
+                    rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600
+                    dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@gmail.com">
+                    </div>
+
+
+                    <div class="relative top-8">
+                        <label for="phone-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Phone number</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                                    <path d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98
+                                     2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z"/>
+                                </svg>
+                            </div>
+                            <input type="text" id="phone-input" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300
+                             text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700
+                              dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="0800-000-7890" required />
+                        </div>
+                    
+                    </div>
+
+                    <div class="relative top-16">
+                    <label for="message" class="block text-sm mb-2 font-medium text-gray-900 dark:text-white">Your message</label>
+                    <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border
+                    border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400
+                    dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+                    </div>
+
+                    <div class="relative top-20">
+                        <button id="submit-form" class="bg-gradient-to-r to-teal-700 from-black px-20 py-5 text-white font-semibold rounded-md">Submit</button>
+                    </div>
+
+                    
+                </form>
+            </div>
+                
+    
+            
+
+                    
+                </form>
+        
+        </form>
+
+    </div>
+
+    <script>
+
+        // Select the toggle button and the dropdown menu
+        const toggleButton = document.querySelector('.togglebutton');
+        const dropdownMenu = document.querySelector('.dropdown');
+
+        // Add an event listener to the toggle button
+        toggleButton.addEventListener('click', () => {
+            // Toggle the visibility class for the dropdown menu
+            dropdownMenu.classList.toggle('top-16');
+        });
+    </script>
+
+</body>
+</html>
+
